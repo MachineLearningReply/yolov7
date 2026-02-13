@@ -1,0 +1,15 @@
+# COCO 2017 dataset http://cocodataset.org
+
+# download command/URL (optional)
+download: bash ./scripts/get_coco.sh
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: /home/ec2-user/code/vision-guard/training/datasets/ifco_poc/preprocessed/train.txt
+val: /home/ec2-user/code/vision-guard/training/datasets/ifco_poc/preprocessed/val.txt
+test: /home/ec2-user/code/vision-guard/training/datasets/ifco_poc/preprocessed/test.txt  # 20288 of 40670 images, submit to https://competitions.codalab.org/competitions/20794
+
+# number of classes
+nc: 1
+
+# class names
+names: ['pallet']
